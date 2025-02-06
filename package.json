@@ -1,13 +1,13 @@
 {
   "name": "chatapp",
   "version": "1.0.0",
+  "description": "A real-time chat application using Express and Socket.IO",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "author": "",
+  "author": "Divya Dharshan S",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^4.19.2",
     "socket.io": "^4.7.5"
