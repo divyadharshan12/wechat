@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <center><h1>WeChat</h1></center>
+                <div class="form-input">
+                    <label>Enter your name</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="form-input">
+                    <button id="join-user">Chat</button>
+                </div>
+            </div>
+        </div>
+        <div class="screen chat-screen">
+            <div class="header">
+                <div class="logo">WeChat
+                </div>
+                <button id="exit-chat">Leave</button>
+            </div>
+            <div class="messages">
+                <div class="message other-message"> 
+                </div>
+            </div>
+            <div class="typebox">
+                <input type="text" id="message-input">
+                <button id="send-message">
+                   <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="exe.js"></script>
+</body>
+
+</html>
