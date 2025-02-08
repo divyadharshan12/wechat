@@ -17,4 +17,4 @@ io.on("connection",function(socket){
         socket.broadcast.emit("chat",message)
     });
 });
-server.listen(1234||process.env.PORT)
+server.listen(8080 || process.env.PORT)
